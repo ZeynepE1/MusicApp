@@ -1,0 +1,21 @@
+[
+    {
+        "id" : 1,
+        "title" : "siyah",
+        "artist" : "neyse",
+        "album" : "neyse",
+        "year" : 2011,
+        "isSoldOut" : false,
+        "imageUrl" : "https://picsum.photos/200"
+    },
+    {
+        "id" : 2,
+        "title" : "beyaz",
+        "artist" : "banane",
+        "album" : "banane",
+        "year" : 2021,
+        "isSoldOut" : true,
+        "imageUrl" : "https://picsum.photos/200"
+    }
+]
+    
