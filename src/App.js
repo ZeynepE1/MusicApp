@@ -9,27 +9,36 @@ import {
   View,
   FlatList
 } from 'react-native';
-import music from './music.json'
+import music from './music.json';
+import SongCard from './components/SongCard/SongCard'
 
 
+const renderItem = ({item})=>{
+ <>
+ <SongCard item={item}/>
+ </>
+  
+  
+  }
 
 function App() {
+  return (
   <SafeAreaView style={styles.container}>
-    <View style={styles.container}>
+    <View >
       <FlatList
         data={music}
-        renderItem={({item})=> <Text>{item.title} </Text>}
+        renderItem={renderItem}
       />
-
-      
 
     </View>
   </SafeAreaView>
-}
+  )}
 
-export default App;
 
 const styles = StyleSheet.create({
   container: {flex:1},
 
 })
+
+
+export default App;

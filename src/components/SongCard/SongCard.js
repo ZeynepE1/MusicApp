@@ -1,20 +1,26 @@
 import React from 'react';
 import { View, Text, Image} from 'react-native'
 
-const SongCard =(props) =>{
+console.log("zeynep")
+const SongCard =({item}) =>{
+    console.log(item)
 
 
     return(
-        <View>
+        <View style={{width: 200, height: 200}}>
             <Image />
             <View>
-                <Text>{props.song.title}</Text>
+                <Text>{item.title}</Text>
                 <View>
-                    <Text>{props.song.artist}</Text>
-                    <Text>{props.song.year}</Text>
+                    <Text>{item.artist}</Text>
+                    <Text>{item.year}</Text>
+                    <Text>{item.images}</Text>
+
                 </View>
 
             </View>
         </View>
     )
 }
+
+export default SongCard;
