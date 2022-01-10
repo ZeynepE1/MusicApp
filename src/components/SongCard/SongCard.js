@@ -7,18 +7,21 @@ const SongCard =({item}) =>{
 
 
     return(
-        <View style={{width: 200, height: 200}}>
-            <Image />
+        <View >
+        
+        <Image style={{width: 150, height: 150}} source={{uri : item.imageUrl}}/>
+              
+
             <View>
-                <Text>{item.title}</Text>
-                <View>
-                    <Text>{item.artist}</Text>
-                    <Text>{item.year}</Text>
-                    <Text>{item.images}</Text>
-
-                </View>
-
+                    <Text>{item.title}</Text>
+                    <View>
+                        <Text>{item.artist}</Text>
+                        <Text>{item.year}</Text>
+                    </View>
             </View>
+                
+
+            
         </View>
     )
 }

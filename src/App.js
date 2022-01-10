@@ -14,11 +14,7 @@ import SongCard from './components/SongCard/SongCard'
 
 
 const renderItem = ({item})=>{
- <>
- <SongCard item={item}/>
- </>
-  
-  
+ return<SongCard item={item}/>
   }
 
 function App() {
@@ -36,7 +32,9 @@ function App() {
 
 
 const styles = StyleSheet.create({
-  container: {flex:1},
+  container: {flex:1,
+  flexDirection:'row',
+  backgroundColor:'red'},
 
 })
 
