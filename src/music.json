@@ -1,7 +1,7 @@
 [
     {
         "id" : 1,
-        "title" : "siyah",
+        "title" : "siyah- bugün hava çok güzel",
         "artist" : "neyse",
         "album" : "neyse",
         "year" : 2011,
@@ -16,6 +16,60 @@
         "year" : 2021,
         "isSoldOut" : true,
         "imageUrl" : "https://elipsbilisim.b-cdn.net/MobilKres/Images/Modal/2021-12-06-13-52-51-61adeb83686e1.png"
+    },
+    {
+        "id" : 3,
+        "title" : "kırmızı",
+        "artist" : "değişik",
+        "album" : "şimdi",
+        "year" : 2022,
+        "isSoldOut" : true,
+        "imageUrl" : "https://picsum.photos/200/300"
+    },
+    {
+        "id" : 4,
+        "title" : "selam",
+        "artist" : "değişik",
+        "album" : "gelecek",
+        "year" : 2080,
+        "isSoldOut" : false,
+        "imageUrl" : "https://picsum.photos/id/237/200/300"
+    },
+    {
+        "id" : 5,
+        "title" : "siyah- bugün hava çok güzel",
+        "artist" : "neyse",
+        "album" : "neyse",
+        "year" : 2011,
+        "isSoldOut" : false,
+        "imageUrl" : "https://picsum.photos/200"
+    },
+    {
+        "id" : 6,
+        "title" : "beyaz",
+        "artist" : "banane",
+        "album" : "banane",
+        "year" : 2021,
+        "isSoldOut" : true,
+        "imageUrl" : "https://elipsbilisim.b-cdn.net/MobilKres/Images/Modal/2021-12-06-13-52-51-61adeb83686e1.png"
+    },
+    {
+        "id" : 7,
+        "title" : "kırmızı",
+        "artist" : "değişik",
+        "album" : "şimdi",
+        "year" : 2022,
+        "isSoldOut" : true,
+        "imageUrl" : "https://picsum.photos/200/300"
+    },
+    {
+        "id" : 8,
+        "title" : "selam",
+        "artist" : "değişik",
+        "album" : "gelecek",
+        "year" : 2080,
+        "isSoldOut" : true,
+        "imageUrl" : "https://picsum.photos/id/237/200/300"
     }
 ]
     

@@ -1,29 +1,28 @@
 import React from 'react';
 import {
   SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
   View,
   FlatList
 } from 'react-native';
 import music from './music.json';
-import SongCard from './components/SongCard/SongCard'
+import SongCard from './components/SongCard'
 
 
-const renderItem = ({item})=>{
- return<SongCard item={item}/>
-  }
+const renderSong = ({item})=><SongCard item={item}/>
+  
+const renderSeperator = () => <View style={styles.seperator}/>
 
 function App() {
   return (
-  <SafeAreaView style={styles.container}>
+  <SafeAreaView >
     <View >
       <FlatList
+        keyExtractor={item => item.id}
         data={music}
-        renderItem={renderItem}
+        renderItem={renderSong}
+        ItemSeparatorComponent={renderSeperator}
       />
 
     </View>
@@ -32,10 +31,11 @@ function App() {
 
 
 const styles = StyleSheet.create({
-  container: {flex:1,
-  flexDirection:'row',
-  backgroundColor:'red'},
-
+  
+  seperator :{
+    borderWidth:1,
+    borderColor:'pink'
+  }
 })
 
 
